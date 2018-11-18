@@ -6,7 +6,6 @@ function Header() {
     <nav
       id="top-navbar"
       className="navbar navbar-expand-lg"
-      style={{ borderBottom: "1 solid black" }}
     >
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">

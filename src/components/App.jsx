@@ -20,6 +20,13 @@ const instaData = [
     comment: ["Awesome photo!","I like it!"]
   },
   {
+    name: "melyasuda",
+    photo: "https://i.pinimg.com/originals/72/99/23/72992365037c4192ff8290c6529438ed.png",
+    location: "Seattle",
+    likes: 50,
+    comment: ["Awesome photo!","I like it!"]
+  },
+  {
     name: "ryanbrokenjesus",
     photo: "http://www.cinejosh.com/gallereys/movies/normal/mr_pellikoduku_movie_stills_2812120321/mr_pellikoduku_movie_stills_2812120321_03.jpg",
     location: "Portland",
@@ -32,13 +39,27 @@ const instaData = [
     location: "Lake City, Seattle",
     likes: 60,
     comment: ["I love it","it's a great photo!"]
-  }]
+  },
+  {
+    name: "ryanbrokenjesus",
+    photo: "http://www.cinejosh.com/gallereys/movies/normal/mr_pellikoduku_movie_stills_2812120321/mr_pellikoduku_movie_stills_2812120321_03.jpg",
+    location: "Portland",
+    likes: 1,
+    comment: ["meh","it's ok"]
+  },,
+  {
+    name: "ryanbrokenjesus",
+    photo: "http://www.cinejosh.com/gallereys/movies/normal/mr_pellikoduku_movie_stills_2812120321/mr_pellikoduku_movie_stills_2812120321_03.jpg",
+    location: "Portland",
+    likes: 1,
+    comment: ["meh","it's ok"]
+  },]
 
 function App(){
   var styles = {
   };
   return (
-    <div className='container' style={{ borderBottom: '1px solid black' }}>
+    <div className='container'>
       <style jsx>{`
         font-family: Helvetica;
       `}</style>
