@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 
 function Card(props) {
+
+  function handleLikeButton(event){
+    event.preventDefault();
+    props.onLikeButton();
+  }
+
   return (
     <div className='card-deck' style={{ marginTop: 15 }}>
       <div className="card" style={{ width: 18 + "em", marginRight: 40 }}>
@@ -11,9 +17,10 @@ function Card(props) {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <a href="#" className="btn btn-primary">
-            Go somewhere
-          </a>
+          <button onClick={handleLikeButton} className="btn btn-primary">
+            Like
+          </button>
+          <p>{props.likes}</p>
         </div>
       </div>
     </div>

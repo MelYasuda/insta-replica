@@ -5,14 +5,15 @@ function Cards(props) {
   return (
     <div className='container'>
       <div className='row' style={{paddingLeft: '8%'}}>
-        {props.instaData.map((data, index) => (
+        {props.instaData.map((data) => (
           <Card
-            key={index}
+            key={data.id}
             name={data.name}
             photo={data.photo}
             location={data.location}
             likes={data.likes}
             comment={data.comment}
+            onLikeButton={props.onLikeButton}
           />
         ))}
       </div>
