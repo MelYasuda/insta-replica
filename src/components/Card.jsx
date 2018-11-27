@@ -2,9 +2,9 @@ import React, { Component } from "react";
 
 function Card(props) {
 
-  function handleLikeButton(event){
-    event.preventDefault();
-    props.onLikeButton();
+  function handleLikeButton(id){
+    console.log(id);
+    props.onLikeButton(id);
   }
 
   return (
@@ -17,7 +17,7 @@ function Card(props) {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <button onClick={handleLikeButton} className="btn btn-primary">
+          <button onClick={ () => handleLikeButton(props.key)} className="btn btn-primary">
             Like
           </button>
           <p>{props.likes}</p>

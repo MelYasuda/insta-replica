@@ -77,10 +77,11 @@ class App extends React.Component {
     this.handleLikeButton = this.handleLikeButton.bind(this);
   }
 
-  handleLikeButton(){
+  handleLikeButton(id){
     console.log('you got one like!');
-    console.log(this.state.instaData[0].likes);
-    this.setState({likes: 6})
+    // console.log(this.state.instaData[id]);
+    console.log(id);
+    // this.setState({likes: 6})
   }
 
   // this.state.instaData.likes
